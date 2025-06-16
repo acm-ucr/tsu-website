@@ -5,7 +5,7 @@ import { ReactQueryClientProvider } from "@/utils/react-query";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "TSU website",
+  title: "TSU Website",
   description: "Thai Student Union @ UCR",
 };
 
