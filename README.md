@@ -1,4 +1,4 @@
-# ACM UCR Website Template
+# TSU website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23407ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -12,7 +12,7 @@
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/)
+[ACM UCR Website Template Figma Design File](https://www.figma.com/design/WVeIelGBc9kX5Z8B2lDQ4D/Spring--25--TSU?node-id=0-1&p=f&t=t89dXd6h7sbSVyws-0)
 
 ## Node.js
 
