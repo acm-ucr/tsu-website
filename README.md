@@ -12,7 +12,7 @@
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/design/WVeIelGBc9kX5Z8B2lDQ4D/Spring--25--TSU?node-id=0-1&p=f&t=t89dXd6h7sbSVyws-0)
+[TSU Figma Design File](https://www.figma.com/design/WVeIelGBc9kX5Z8B2lDQ4D/Spring--25--TSU?node-id=0-1&p=f&t=t89dXd6h7sbSVyws-0)
 
 ## Node.js
 
