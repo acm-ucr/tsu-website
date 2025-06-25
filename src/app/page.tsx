@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center text-5xl font-tsu-sahitya">
+    <div className="font-tsu-sahitya flex h-screen w-screen items-center justify-center text-5xl">
       Hello World
     </div>
   );
