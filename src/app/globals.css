@@ -1,1 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sahitya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sahitya:wght@700&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+  --color-tsu-pink-100: #F695AE;
+  --color-tsu-orange-100: #FFBC49;
+  --color-tsu-yellow-100: #FFDD54;
+  --color-tsu-green-100: #7DE180;
+  --color-tsu-green-200: #B0CAAC;
+  --color-tsu-green-300: #8ABA83;
+  --color-tsu-blue-100: #6DAEE8;
+  --color-tsu-beige-100: #F1EEE1;
+  --color-tsu-beige-200: #FFE7D6;
+  --color-tsu-brown-100: #D09F8E;
+  --color-tsu-brown-300: #8B4E39;
+  --color-tsu-brown-400: #784736;
+
+  --font-tsu-sahitya: "Sahitya", serif;
+}
