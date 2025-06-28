@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sahitya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sahitya:wght@700&display=swap");
-
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-tsu-pink-100: #f695ae;
   --color-tsu-orange-100: #ffbc49;
   --color-tsu-yellow-100: #ffdd54;
