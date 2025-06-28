@@ -1,13 +1,13 @@
-@tailwind base;
+@import "tailwindcss/preflight";
 @tailwind utilities;
 
 /* ✅ Add your TSU custom variables here */
 :root {
-  --tsu-pink: #f472b6; /* Example hex — replace with Figma hex */
-  --tsu-bg: #fff1f2; /* Example hex — replace with Figma hex */
+  --tsu-pink: #f472b6; /* Replace with Figma hex */
+  --tsu-bg: #fff1f2; /* Replace with Figma hex */
 }
 
 /* Example: custom font (replace with actual) */
 body {
-  font-family: "Noto Serif", serif; /* Example — replace with TSU font */
+  font-family: "Noto Serif", serif; /* Replace with TSU font */
 }
