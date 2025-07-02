@@ -1,7 +1,10 @@
 const Home = () => {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
-      Hello World
+      <p>
+        {" "}
+        <img src="/board header.png" alt="Board Header" />{" "}
+      </p>
     </div>
   );
 };
