@@ -3,7 +3,7 @@ const Home = () => {
     <div className="flex h-screen w-screen items-center justify-center">
       <p>
         {" "}
-        <img src="/board header.png" alt="Board Header" />{" "}
+        <img src="/webp header.webp" alt="Board Header" />{" "}
       </p>
     </div>
   );
