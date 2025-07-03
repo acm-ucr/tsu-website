@@ -4,7 +4,7 @@ import Image from "next/image";
 import { navigations } from "@/data/NavBarLinks";
 import logo from "@/public/textLogo.webp";
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
     <div className="bg-tsu-beige-300 flex w-full items-center justify-between px-8 py-3 shadow-lg">
       <Link href="/">
@@ -21,3 +21,5 @@ export const NavBar = () => {
     </div>
   );
 };
+
+export default NavBar;
