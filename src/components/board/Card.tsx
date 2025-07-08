@@ -14,7 +14,7 @@ const Card = ({ name, role }: BoardProps) => {
         <Image
           src={Flower}
           alt="Flower"
-          className="absolute right-[15vw] -bottom-[8vh]"
+          className="absolute right-[180] bottom-[-50]"
         />
       </div>
       <div className="font-tsu-sahitya mt-14 flex flex-col items-center text-5xl">
