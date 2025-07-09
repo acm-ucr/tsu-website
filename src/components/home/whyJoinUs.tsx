@@ -8,7 +8,7 @@ const WhyJoinUs = () => {
           className="h-7 border-l-8"
           style={{ borderColor: "var(--color-tsu-orange-100)" }}
         />
-        <h1 className="text-5xl">Why join us?</h1>
+        <h1 className="text-5xl">Why Join Us?</h1>
       </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
