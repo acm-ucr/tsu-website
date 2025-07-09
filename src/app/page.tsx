@@ -1,5 +1,5 @@
 import WhoAreWe from "@/components/home/whoAreWe";
-import BoardHeader from "@/components/board/header";
+import BoardHeader from "@/components/webp/header";
 
 const Home = () => {
   return (
