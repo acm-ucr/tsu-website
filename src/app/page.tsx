@@ -1,7 +1,10 @@
+import WhoAreWe from "@/components/home/whoAreWe";
+
 const Home = () => {
   return (
     <div>
       {/* Hello World */}
+      <WhoAreWe />
 
       <div className="mx-auto mt-10 max-w-4xl font-serif">
         <div className="mb-4 flex items-baseline gap-3">
