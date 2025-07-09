@@ -3,12 +3,11 @@ import WhoAreWe from "@/components/home/whoAreWe";
 const Home = () => {
   return (
     <div>
-      {/* Hello World */}
       <WhoAreWe />
 
       <div className="mx-auto mt-10 max-w-4xl font-serif">
         <div className="mb-4 flex items-baseline gap-3">
-          <div className="h-7 border-l-5 border-orange-300"></div>
+          <div className="h-7 border-l-5 border-orange-300"/>
           <h1 className="text-3xl">Why join us?</h1>
         </div>
         <p>
