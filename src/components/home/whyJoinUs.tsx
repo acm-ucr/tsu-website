@@ -5,7 +5,7 @@ const WhyJoinUs = () => {
         <div className="font-tsu-sahitya mx-auto mt-10 max-w-4xl">
             <div className="mb-4 flex items-baseline gap-3">
                 <div className="h-7 border-l-5 border-color-tsu-orange-100"/>
-                <h1 className="text-3xl">Why join us?</h1>
+                <h1 className="text-5xl">Why join us?</h1>
             </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
