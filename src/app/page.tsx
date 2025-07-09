@@ -1,11 +1,13 @@
-import WhoAreWe from "@/components/home/whoAreWe";
+import ThaiStudentUnion from "../../components/ThaiStudentUnion";
+import React from "react";
 
 const Home = () => {
   return (
-    <>
-      <WhoAreWe />
-    </>
+    <div className="flex h-screen w-screen items-center justify-center">
+      <ThaiStudentUnion />
+    </div>
   );
 };
 
 export default Home;
+
