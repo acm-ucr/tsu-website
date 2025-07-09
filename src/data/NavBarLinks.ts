@@ -13,8 +13,8 @@ export const navigations: navigation[] = [
     link: "/about",
   },
   {
-    name: "board",
-    link: "/board",
+    name: "webp",
+    link: "/webp",
   },
   {
     name: "events",
