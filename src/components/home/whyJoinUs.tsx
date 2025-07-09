@@ -2,9 +2,9 @@
 
 const WhyJoinUs = () => {
     return (
-        <div className="font-tsu-sahitya mx-auto mt-10 max-w-4xl">
+        <div className="font-tsu-sahitya m-20 mx-auto max-w-4xl">
             <div className="mb-4 flex items-baseline gap-3">
-                <div className="h-7 border-l-5 border-color-tsu-orange-100"/>
+                <div className="h-7 border-l-8" style={{ borderColor: "var(--color-tsu-orange-100)" }}/>
                 <h1 className="text-5xl">Why join us?</h1>
             </div>
             <p>
