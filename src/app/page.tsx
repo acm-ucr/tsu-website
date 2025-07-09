@@ -1,3 +1,5 @@
+import WhoAreWe from "@/components/home/whoAreWe";
+
 const Home = () => {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
