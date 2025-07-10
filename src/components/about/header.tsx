@@ -1,4 +1,4 @@
-const About_Header = () => {
+const AboutHeader = () => {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
       <p className="font-tsu-sahitya text-8xl">About Us</p>
@@ -6,4 +6,4 @@ const About_Header = () => {
   );
 };
 
-export default About_Header;
+export default AboutHeader;

@@ -1,9 +1,9 @@
-import About_Header from "../../components/about/header";
+import AboutHeader from "../../components/about/header";
 
 const About = () => {
   return (
     <>
-      <About_Header />
+      <AboutHeader />
     </>
   );
 };
