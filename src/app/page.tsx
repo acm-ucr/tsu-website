@@ -1,13 +1,15 @@
-import WhoAreWe from "@/components/home/whoAreWe";
-import WhyJoinUs from "@/components/home/whyJoinUs";
+"use client";
 
-const Home = () => {
+import ThaiStudentUnion from "../components/home/ThaiStudentUnion";
+import WhoAreWe from "../components/home/whoAreWe"; // double-check casing!
+import JoinUs from "../components/home/JoinUs";
+
+export default function Home() {
   return (
-    <div>
+    <main>
+      <ThaiStudentUnion />
       <WhoAreWe />
-      <WhyJoinUs />
-    </div>
+      <JoinUs />
+    </main>
   );
-};
-
-export default Home;
+}
