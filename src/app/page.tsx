@@ -1,12 +1,29 @@
-import ThaiStudentUnion from "../../components/ThaiStudentUnion";
-import React from "react";
+// "use client";
 
-const Home = () => {
+// import ThaiStudentUnion from "../components/home/ThaiStudentUnion";
+// import WhoAreWe from "../components/home/whoAreWe";
+
+// export default function Home() {
+//   return (
+//     <main>
+//       <ThaiStudentUnion />
+//       <WhoAreWe />
+//     </main>
+//   );
+// }
+
+"use client";
+
+import ThaiStudentUnion from "../components/home/ThaiStudentUnion";
+import WhoAreWe from "../components/home/whoAreWe";
+import JoinUs from "../components/home/JoinUs";
+
+export default function Home() {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <main>
       <ThaiStudentUnion />
-    </div>
+      <WhoAreWe />
+      <JoinUs />
+    </main>
   );
-};
-
-export default Home;
+}
