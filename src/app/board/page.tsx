@@ -1,9 +1,7 @@
+import BoardHeader from "@/components/board/header";
+
 const Home = () => {
-  return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Board
-    </div>
-  );
+  return <BoardHeader />;
 };
 
 export default Home;

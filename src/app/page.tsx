@@ -1,12 +1,13 @@
-import WhoAreWe from "@/components/home/whoAreWe";
-import BoardHeader from "@/components/board/header";
+import ThaiStudentUnion from "../components/home/ThaiStudentUnion";
+import WhoAreWe from "../components/home/whoAreWe";
+import WhyJoinUs from "../components/home/whyJoinUs";
 
-const Home = () => {
+export default function Home() {
   return (
-    <>
+    <div className="bg-tsu-beige-300">
+      <ThaiStudentUnion />
       <WhoAreWe />
-      <BoardHeader />
-    </>
+      <WhyJoinUs />
+    </div>
   );
-};
-export default Home;
+}

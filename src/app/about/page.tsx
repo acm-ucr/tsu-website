@@ -1,9 +1,11 @@
-const Home = () => {
+import AboutHeader from "../../components/about/header";
+
+const About = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      About
-    </div>
+    <>
+      <AboutHeader />
+    </>
   );
 };
 
-export default Home;
+export default About;
