@@ -1,14 +1,9 @@
-"use client";
-
 const WhyJoinUs = () => {
   return (
-    <div className="font-tsu-sahitya m-20 mx-auto w-[85vw] p-20">
+    <div className="font-tsu-sahitya mx-30 w-[85vw] py-20">
       <div className="mb-4 flex items-baseline gap-3">
-        <div
-          className="h-7 border-l-8"
-          style={{ borderColor: "var(--color-tsu-orange-100)" }}
-        />
-        <h1 className="text-5xl">Why Join Us?</h1>
+        <div className="border-tsu-orange-100 h-10 border-l-8" />
+        <p className="text-5xl">Why Join Us?</p>
       </div>
       <p className="text-2xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

@@ -1,15 +1,13 @@
-"use client";
-
 import ThaiStudentUnion from "../components/home/ThaiStudentUnion";
-import WhoAreWe from "../components/home/whoAreWe"; // double-check casing!
-import JoinUs from "../components/home/JoinUs";
+import WhoAreWe from "../components/home/whoAreWe";
+import WhyJoinUs from "../components/home/whyJoinUs";
 
 export default function Home() {
   return (
-    <main>
+    <div className="bg-tsu-beige-300">
       <ThaiStudentUnion />
       <WhoAreWe />
-      <JoinUs />
-    </main>
+      <WhyJoinUs />
+    </div>
   );
 }
