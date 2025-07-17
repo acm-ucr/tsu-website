@@ -1,7 +1,8 @@
+import CardMapping from "@/components/board/CardMapping";
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Board
+    <div>
+      <CardMapping />
     </div>
   );
 };
