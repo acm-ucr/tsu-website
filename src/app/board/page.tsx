@@ -1,5 +1,5 @@
 import CardMapping from "@/components/board/CardMapping";
-const Home = () => {
+const Board = () => {
   return (
     <div>
       <CardMapping />
@@ -7,4 +7,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Board;
