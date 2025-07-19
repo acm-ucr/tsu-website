@@ -1,7 +1,13 @@
 import BoardHeader from "@/components/board/header";
+import CardMapping from "@/components/board/CardMapping";
 
-const Home = () => {
-  return <BoardHeader />;
+const Board = () => {
+  return (
+    <div>
+      <BoardHeader />
+      <CardMapping />
+    </div>
+  );
 };
 
-export default Home;
+export default Board;
