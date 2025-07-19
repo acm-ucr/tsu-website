@@ -6,7 +6,7 @@ import logo from "@/public/textLogo.webp";
 
 const NavBar = () => {
   return (
-    <div className="relative bg-tsu-beige-300 flex w-full items-center justify-between px-8 py-3 shadow-lg">
+    <div className="bg-tsu-beige-300 relative flex w-full items-center justify-between px-8 py-3 shadow-lg">
       <Link href="/">
         <Image src={logo} alt="TSU Text Logo" width={200} height={70} />
       </Link>
