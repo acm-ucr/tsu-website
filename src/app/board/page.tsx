@@ -1,9 +1,10 @@
-const Home = () => {
+import CardMapping from "@/components/board/CardMapping";
+const Board = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Board
+    <div>
+      <CardMapping />
     </div>
   );
 };
 
-export default Home;
+export default Board;
