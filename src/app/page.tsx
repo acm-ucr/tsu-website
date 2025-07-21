@@ -2,7 +2,7 @@
 
 // import ThaiStudentUnion from "../components/home/ThaiStudentUnion";
 // import WhoAreWe from "../components/home/whoAreWe";
-// import JoinUs from "../components/home/whyJoinUs"; 
+// import JoinUs from "../components/home/whyJoinUs";
 
 // export default function Home() {
 //   return (

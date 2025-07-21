@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const WhoAreWe = () => {
   return (
-    <div className="bg-tsu-blue-100 flex h-auto w-screen items-center justify-center px-12 py-16 font-tsu-sahitya">
+    <div className="bg-tsu-blue-100 font-tsu-sahitya flex h-auto w-screen items-center justify-center px-12 py-16">
       {/* Mango Image */}
-      <div className="w-1/3 flex justify-center">
+      <div className="flex w-1/3 justify-center">
         <Image
           src="/mango.webp"
           alt="Mango"

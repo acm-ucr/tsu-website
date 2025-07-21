@@ -201,7 +201,7 @@ const ThaiStudentUnion = () => {
   return (
     <main className="space-y-32 bg-rose-50 pb-20">
       {/* Section 1: Thai Student Union Intro */}
-      <section className="relative flex flex-col md:flex-row border-l-8 border-pink-400 rounded-xl p-12 mx-4 bg-rose-50 overflow-hidden min-h-[400px]">
+      <section className="relative mx-4 flex min-h-[400px] flex-col overflow-hidden rounded-xl border-l-8 border-pink-400 bg-rose-50 p-12 md:flex-row">
         <div className="z-10 max-w-3xl">
           <h1 className="mb-4 font-serif text-7xl">Thai Student Union</h1>
           <p className="font-serif text-xl text-gray-700">
@@ -217,24 +217,24 @@ const ThaiStudentUnion = () => {
           alt="Palm Tree"
           width={500}
           height={500}
-          className="absolute left-[600] bottom-[-15] md:block hidden"
+          className="absolute bottom-[-15] left-[600] hidden md:block"
         />
       </section>
 
       {/* Section 2: Why Join Us */}
-      <section className="relative flex items-center bg-rose-50 px-12 pt-12 pb-20 mx-4 overflow-visible min-h-[140px] rounded-xl">
+      <section className="relative mx-4 flex min-h-[140px] items-center overflow-visible rounded-xl bg-rose-50 px-12 pt-12 pb-20">
         {/* Yellow vertical bar matching mango image height */}
-        <div className="w-2 h-[50px] bg-yellow-400 rounded-l relative -top-15 mr-0" />
+        <div className="relative -top-15 mr-0 h-[50px] w-2 rounded-l bg-yellow-400" />
 
         {/* Content with left margin */}
         <div className="ml-1 max-w-3xl">
-          <h2 className="text-5xl font-bold mb-4">Why Join Us?</h2>
+          <h2 className="mb-4 text-5xl font-bold">Why Join Us?</h2>
           <p className="font-serif text-lg text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
 
@@ -244,20 +244,19 @@ const ThaiStudentUnion = () => {
           alt="Mango Left"
           width={200}
           height={200}
-          className="absolute bottom-[-65] left-[-35] -rotate-[-180deg] scale-x-[1] md:block hidden"
-
+          className="absolute bottom-[-65] left-[-35] hidden scale-x-[1] -rotate-[-180deg] md:block"
         />
         <Image
           src="/mango.webp"
           alt="Mango Right"
           width={200}
           height={200}
-          className="absolute top-[-25] left-[715] rotate-[15deg] md:block hidden"
+          className="absolute top-[-25] left-[715] hidden rotate-[15deg] md:block"
         />
       </section>
 
       {/* Blue bar separate from the yellow section */}
-      <div className="mx-4 mt-4 h-3 w-[95%] bg-blue-400 rounded ml-[2%]" />
+      <div className="mx-4 mt-4 ml-[2%] h-3 w-[95%] rounded bg-blue-400" />
     </main>
   );
 };
