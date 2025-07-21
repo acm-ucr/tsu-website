@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Sahitya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sahitya:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
-
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-tsu-pink-100: #f695ae;
   --color-tsu-orange-100: #ffbc49;
   --color-tsu-orange-200: #f6a623;
@@ -21,5 +20,6 @@
   --color-tsu-brown-400: #784736;
 
   --font-tsu-sahitya: "Sahitya", serif;
+
   --font-tsu-sora: "Sora", serif;
 }
