@@ -1,26 +1,87 @@
-"use client";
+import Image from "next/image";
 
-const WhyJoinUs = () => {
+export default function WhyJoinUs() {
   return (
-    <div className="font-tsu-sahitya m-20 mx-auto w-[85vw] p-20">
-      <div className="mb-4 flex items-baseline gap-3">
-        <div
-          className="h-7 border-l-8"
-          style={{ borderColor: "var(--color-tsu-orange-100)" }}
-        />
-        <h1 className="text-5xl">Why Join Us?</h1>
-      </div>
-      <p className="text-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
-  );
-};
+    <section className="relative bg-[#FBEFEF] px-8 pt-10 pb-28">
+      {/* Content */}
+      <div className="max-w-5xl mx-auto">
+        {/* Yellow Left Bar with Title */}
+        <div className="inline-block border-l-[6px] border-[#F5B82E] pl-3 mb-4">
+          <h2 className="text-3xl font-bold">Why Join Us?</h2>
+        </div>
 
-export default WhyJoinUs;
+        <p className="text-lg mt-4 text-[#3D3D3D]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi
+        </p>
+      </div>
+
+      {/* Left Mango */}
+      <Image
+        src="/mango1.webp"
+        alt="Mango left"
+        width={200}
+        height={200}
+        className="absolute bottom-8 left-6 w-[80px] h-auto"
+      />
+
+      {/* Right Mango */}
+      <Image
+        src="/mango2.webp"
+        alt="Mango right"
+        width={200}
+        height={200}
+        className="absolute top-6 right-6 w-[80px] h-auto"
+      />
+
+      {/* Blue Bottom Border */}
+      <div className="absolute bottom-0 left-0 w-full h-3 bg-blue-400" />
+    </section>
+  );
+}
+
+// "use client";
+
+// import Image from "next/image";
+// import React from "react";
+
+// const WhyJoinUs = () => {
+//   return (
+//     <section className="relative bg-rose-50 px-16 pt-16 pb-24 min-h-screen overflow-hidden">
+//       <div className="max-w-4xl z-10 relative">
+//         <h2 className="text-6xl font-bold mb-6">Why Join Us?</h2>
+//         <p className="font-serif text-xl text-gray-700">
+//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+//           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+//           minim veniam, quis nostrud exercitation ullamco laboris nisi. Lorem
+//           ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+//           tempor incididunt ut labore et dolore magna aliqua.
+//         </p>
+//       </div>
+
+//       {/* Bigger and repositioned mangos */}
+//       <Image
+//         src="/mango.webp"
+//         alt="Mango Left"
+//         width={200}
+//         height={200}
+//         className="absolute bottom-8 left-8 rotate-[20deg]"
+//       />
+//       <Image
+//         src="/mango.webp"
+//         alt="Mango Right"
+//         width={200}
+//         height={200}
+//         className="absolute top-8 right-8 -rotate-[15deg]"
+//       />
+
+//       {/* Separate Blue Underline */}
+//       <div className="absolute bottom-0 left-0 w-full h-3 bg-blue-400" />
+//     </section>
+//   );
+// };
+
+// export default WhyJoinUs;
