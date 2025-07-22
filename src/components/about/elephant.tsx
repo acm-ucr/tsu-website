@@ -7,7 +7,7 @@ const Elephant = () => {
       <Image
         src={elephant}
         alt="Elephant w/Text Bubble Image"
-        className="flex w-[80%] ml-40"
+        className="flex w-[80%] ml-40 -mb-30"
       />
     </div>
   );
