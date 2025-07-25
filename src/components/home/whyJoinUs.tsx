@@ -1,21 +1,45 @@
-const WhyJoinUs = () => {
-  return (
-    <div className="font-tsu-sahitya mx-30 w-[85vw] py-20">
-      <div className="mb-4 flex items-baseline gap-3">
-        <div className="border-tsu-orange-100 h-10 border-l-8" />
-        <p className="text-5xl">Why Join Us?</p>
-      </div>
-      <p className="text-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
-  );
-};
+import Image from "next/image";
 
-export default WhyJoinUs;
+export default function WhyJoinUs() {
+  return (
+    <section className="relative bg-[#FBEFEF] px-8 pt-10 pb-28">
+      {/* Content */}
+      <div className="mx-auto max-w-5xl">
+        {/* Yellow Left Bar with Title */}
+        <div className="mb-4 inline-block border-l-[6px] border-[#F5B82E] pl-3">
+          <h2 className="text-3xl font-bold">Why Join Us?</h2>
+        </div>
+
+        <p className="mt-4 text-lg text-[#3D3D3D]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi
+        </p>
+      </div>
+
+      {/* Left Mango */}
+      <Image
+        src="/mango1.webp"
+        alt="Mango left"
+        width={200}
+        height={200}
+        className="absolute bottom-8 left-6 h-auto w-[80px]"
+      />
+
+      {/* Right Mango */}
+      <Image
+        src="/mango2.webp"
+        alt="Mango right"
+        width={200}
+        height={200}
+        className="absolute top-6 right-6 h-auto w-[80px]"
+      />
+
+      {/* Blue Bottom Border */}
+      <div className="absolute bottom-0 left-0 h-3 w-full bg-blue-400" />
+    </section>
+  );
+}
