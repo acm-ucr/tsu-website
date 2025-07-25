@@ -1,7 +1,7 @@
 import AboutHeader from "../../components/about/header";
 import Polaroid from "../../components/about/polaroid";
 import { TopAboutText } from "@/components/about/toptext";
-import { BottomAboutText } from "@/components/about/bottomtext";
+import AboutBottom from "../../components/about/aboutbottom";
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
       <AboutHeader />
       <TopAboutText />
       <Polaroid />
-      <BottomAboutText />
+      <AboutBottom />
     </div>
   );
 };
