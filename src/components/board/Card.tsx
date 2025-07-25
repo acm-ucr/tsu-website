@@ -1,16 +1,17 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Flower from "@/public/flower.webp";
 import Board from "@/public/board.webp";
 interface BoardProps {
   name: string;
   role: string;
+  image: StaticImageData;
 }
 
-const Card = ({ name, role }: BoardProps) => {
+const Card = ({ name, role, image }: BoardProps) => {
   return (
-    <div className="mb-12 flex flex-col items-center justify-center p-10">
+    <div className="mb-5 flex flex-col items-center justify-center p-10">
       <div className="relative flex w-80 flex-shrink-0 border-10 border-white">
-        <Image src={Board} alt="Board" />
+        <Image src={image || Board} alt="Board" />
         <Image
           src={Flower}
           alt="Flower"
