@@ -1,39 +1,41 @@
 export interface BoardInfo {
-  image: string;
+  image: string; // ✅ changed from StaticImageData to string
   name: string;
   role: string;
 }
+
+const placeholder = "/placeholder.webp"; // ✅ path to image in /public
 
 const BoardMembers: BoardInfo[] = [
   {
     name: "Jasper",
     role: "President",
-    image: "/placeholder.webp",
+    image: placeholder,
   },
   {
     name: "Jasper",
     role: "President",
-    image: "/placeholder.webp",
+    image: placeholder,
   },
   {
     name: "Jasper",
     role: "President",
-    image: "/placeholder.webp",
+    image: placeholder,
   },
   {
     name: "Jasper",
     role: "President",
-    image: "/placeholder.webp",
+    image: placeholder,
   },
   {
     name: "Jasper",
     role: "President",
-    image: "/placeholder.webp",
+    image: placeholder,
   },
   {
     name: "Jasper",
     role: "President",
-    image: "/placeholder.webp",
+    image: placeholder,
   },
 ];
 
