@@ -6,33 +6,30 @@ import { FaLine } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-tsu-beige-200 flex flex-row items-center justify-center gap-10 px-10 py-6">
+    <div className="bg-tsu-beige-200 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-5 sm:px-10 sm:py-6">
       <Image
         src={TSULogo}
         alt="TSU Logo"
-        className="flex w-[10%] flex-shrink-0"
+        className="flex w-25 flex-shrink-0 sm:w-[12%]"
       />
 
-      <div className="font-tsu-sahitya flex flex-col items-center pt-5">
-        <p className="text-5xl">Thai Student Union</p>
-        <p className="text-sm text-gray-600">
-          © ACM at UCR 2025. Made with 🧡 from ACM & TSU
-        </p>
+      <div className="font-tsu-sahitya flex items-center text-center text-3xl whitespace-nowrap sm:items-start sm:text-left md:text-4xl lg:text-5xl 2xl:text-6xl">
+        Thai Student Union
       </div>
 
-      <div className="ml-15 h-20 border-1 border-black"></div>
+      <div className="invisible border-1 border-black sm:visible sm:h-20 md:ml-2 lg:ml-10"></div>
 
-      <div className="font-tsu-sahitya ml-10 flex items-center gap-10 text-xl font-medium">
+      <div className="font-tsu-sahitya mb-2 flex items-center gap-5 text-xl font-medium xl:ml-10 xl:gap-10 xl:text-3xl 2xl:text-4xl">
         <div className="flex items-center gap-2">
           <Link href="https://www.instagram.com/tsuucr/?hl=en" target="_blank">
-            <AiFillInstagram className="text-tsu-orange-100 h-11 w-11" />
+            <AiFillInstagram className="text-tsu-orange-100 h-11 w-11 xl:h-15 xl:w-15" />
           </Link>
           <span>Instagram</span>
         </div>
 
         <div className="flex items-center gap-2">
           <Link href="https://line.me/ti/g/3K_UGDcRGR" target="_blank">
-            <FaLine className="text-tsu-orange-100 h-11 w-11" />
+            <FaLine className="text-tsu-orange-100 h-11 w-11 xl:h-15 xl:w-15" />
           </Link>
           <span>Line</span>
         </div>
