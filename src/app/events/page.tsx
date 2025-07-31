@@ -1,9 +1,12 @@
-const Home = () => {
+import CalendarCall from "@/components/events/calendar/calendarcall";
+
+const Events = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex h-screen w-screen flex-col items-center justify-center gap-5">
       Events
+      <CalendarCall />
     </div>
   );
 };
 
-export default Home;
+export default Events;
