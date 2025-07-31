@@ -10,15 +10,15 @@ interface BoardProps {
 const Card = ({ name, role, image }: BoardProps) => {
   return (
     <div className="mb-5 flex flex-col items-center justify-center p-4 md:p-10">
-      <div className="relative flex w-60 md:w-80 flex-shrink-0 border-8 md:border-10 border-white">
+      <div className="relative flex w-60 flex-shrink-0 border-8 border-white md:w-80 md:border-10">
         <Image src={image || Board} alt="Board" />
         <Image
           src={Flower}
           alt="Flower"
-          className="absolute right-[140] md:right-[180] bottom-[-40] md:bottom-[-50]"
+          className="absolute right-[140] bottom-[-40] md:right-[180] md:bottom-[-50]"
         />
       </div>
-      <div className="font-tsu-sahitya mt-8 md:mt-14 flex flex-col items-center text-3xl md:text-5xl">
+      <div className="font-tsu-sahitya mt-8 flex flex-col items-center text-3xl md:mt-14 md:text-5xl">
         <div className="text-tsu-brown-300 font-bold">{name}</div>
         <div className="ml-20 md:ml-35">{role}</div>
       </div>
