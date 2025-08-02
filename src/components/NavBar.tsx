@@ -6,8 +6,6 @@ import Image from "next/image";
 import { navigations } from "@/data/NavBarLinks";
 import logo from "@/public/textLogo.webp";
 
-import { RiMenu2Fill, RiCloseFill } from "react-icons/ri";
-
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,25 +28,28 @@ const NavBar = () => {
           ))}
         </div>
 
-        <div className="md:hidden">
-          {isOpen ? (
-            <RiCloseFill
-              size={32}
-              onClick={toggleMenu}
-              className="cursor-pointer"
-            />
-          ) : (
-            <RiMenu2Fill
-              size={32}
-              onClick={toggleMenu}
-              className="cursor-pointer"
-            />
-          )}
+        <div
+          className="flex h-10 w-10 cursor-pointer flex-col items-center justify-center gap-3 md:hidden"
+          onClick={toggleMenu}
+        >
+          <div
+            className={`bg-tsu-orange-100 h-1 w-15 ${
+              isOpen ? "translate-y-2 rotate-45" : ""
+            }`}
+          />
+          <div
+            className={`bg-tsu-blue-100 h-1 w-15 ${
+              isOpen ? "-translate-y-2 -rotate-45" : ""
+            }`}
+          />
+          <div
+            className={`bg-tsu-pink-100 h-1 w-15 ${isOpen ? "opacity-0" : ""}`}
+          />
         </div>
       </div>
 
       {isOpen && (
-        <div className="flex flex-col items-center gap-4 pb-4 md:hidden">
+        <div className="bg-tsu-beige-300 absolute z-50 flex w-full flex-col items-center pt-2 pb-4 shadow-md md:hidden">
           {navigations.map(({ name, link }, index) => (
             <Link
               key={index}
