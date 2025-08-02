@@ -8,14 +8,14 @@ const WhoAreWe = () => {
       <Image
         src={placeholder}
         alt="Placeholder Image"
-        className="ml-17 w-1/3 p-13"
+        className="ml-[23px] w-1/3 p-6 lg:ml-17 lg:p-13"
       />
 
-      <div className="font-tsu-sahitya mt-8 ml-25 flex w-5/10 flex-col text-white">
-        <div className="mt-30 mb-4 text-center text-5xl text-white">
-          <span className="text-tsu-pink-100 mr-2">|</span>Who Are We?
+      <div className="font-tsu-sahitya mt-[8px] ml-[7px] flex w-2/3 flex-col text-white lg:mt-8 lg:ml-25 lg:w-5/10">
+        <div className="mt-10.5 mb-[1px] text-center text-[16px] text-white lg:mt-30 lg:mb-4 lg:text-5xl">
+          <span className="text-tsu-pink-100 mr-0.5 lg:mr-2">|</span>Who Are We?
         </div>
-        <p className="text-2xl text-white">
+        <p className="text-[7px] text-white lg:text-2xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem
