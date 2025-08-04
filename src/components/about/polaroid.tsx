@@ -4,9 +4,9 @@ import polaroid2 from "@/public/polaroid2.webp";
 
 const Polaroid = () => {
   return (
-    <div className="flex items-center justify-center gap-5 px-4 py-2 md:p-8">
-      <Image src={polaroid} alt="Polaroid 1 Image" className="mt-6 w-2/5" />
-      <Image src={polaroid2} alt="Polaroid 2 Image" className="-mt-6 w-2/5" />
+    <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-4 md:p-12 md:my-12 my-6">
+      <Image src={polaroid} alt="Polaroid 1 Image" className="md:mt-6 md:w-2/5 w-3/4" />
+      <Image src={polaroid2} alt="Polaroid 2 Image" className="md:-mt-6 md:w-2/5 w-3/4" />
     </div>
   );
 };
