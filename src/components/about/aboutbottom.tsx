@@ -20,7 +20,7 @@ const AboutBottom = () => {
       <Image
         src={elephant}
         alt="Elephant w/ Text Bubble Image"
-        className="w-4/5 md:pt-12 "
+        className="w-4/5 md:pt-12"
       />
     </div>
   );
