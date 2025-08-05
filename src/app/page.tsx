@@ -1,11 +1,13 @@
-"use client";
-
-import ThaiStudentUnion from "../components/home/ThaiStudentUnion";
+import ThaiStudentUnion from "@/components/home/ThaiStudentUnion";
+// import WhoAreWe from "@/components/home/whoAreWe";
+import WhyJoinUs from "@/components/home/whyJoinUs";
 
 export default function Home() {
   return (
-    <main className="space-y-12">
+    <div className="bg-rose-50">
       <ThaiStudentUnion />
-    </main>
+      {/* <WhoAreWe /> */}
+      <WhyJoinUs />
+    </div>
   );
 }
