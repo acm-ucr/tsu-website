@@ -48,25 +48,25 @@ import Mango from "@/public/mango.webp";
 
 const WhyJoinUs = () => {
   return (
-    <div className="relative w-full min-h-[80vh]">
+    <div className="relative min-h-[80vh] w-full">
       <Image
         src={Mango}
         alt="Top Mango"
         className="absolute top-[-95] right-[45] w-[15vw]"
       />
-      <div className="font-tsu-sahitya mx-30 w-[85vw] py-20 pb-150 border-b-8 border-tsu-blue-100">
+      <div className="font-tsu-sahitya border-tsu-blue-100 mx-30 w-[85vw] border-b-8 py-20 pb-150">
         <div className="mb-4 flex items-baseline gap-3">
           <div className="border-tsu-orange-100 h-10 border-l-8" />
           <p className="text-5xl">Why Join Us?</p>
         </div>
         <p className="text-2xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
       <Image
