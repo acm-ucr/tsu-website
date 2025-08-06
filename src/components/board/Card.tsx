@@ -24,8 +24,8 @@ const Card = ({ name, role, image }: BoardProps) => {
           className="absolute right-[180px] bottom-[-50px]"
         />
       </div>
-      <div className="font-tsu-sahitya mt-14 flex flex-col items-center text-5xl">
-        <div className="text-tsu-brown-300 font-bold">{name}</div>
+      <div className="mt-14 flex flex-col items-center font-tsu-sahitya text-5xl">
+        <div className="font-bold text-tsu-brown-300">{name}</div>
         <div className="ml-35">{role}</div>
       </div>
     </div>
