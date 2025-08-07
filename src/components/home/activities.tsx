@@ -1,28 +1,29 @@
 "use client";
-import Image from "next/image";
-import placeholder from "@/public/placeholder.webp";
+import Image, { StaticImageData } from "next/image";
 
-const Activities = () => {
+type ActivitiesProps = {
+  backgroundColor: string; 
+  borderColor: string;  
+  image: StaticImageData;
+  eventName: string;
+  eventDescription: string;
+};
+const Activities = ({ backgroundColor, borderColor, image, eventName, eventDescription }: ActivitiesProps) => {
     return (
-       <div className="bg-tsu-pink-100 flex h-auto w-screen">
+       <div className= {`flex h-auto w-screen ${ backgroundColor }`}>
             <Image
-              src={placeholder}
-              alt="Placeholder Image"
+              src={image}
+              alt={eventName}
               className="ml-17 w-1/3 p-13"
             />
       
             <div className="font-tsu-sahitya text-white mt-10 mb-4">
                 <div className="mb-4 flex items-baseline gap-3">
-                    <div className="h-10 border-l-8" style={{ borderColor: "#C95171" }} />
-                    <p className="text-5xl">Loy Krathong</p>
+                    <div className={`h-10 border-l-8 ${ borderColor }`} />
+                    <p className="text-5xl">{eventName}</p>
                 </div>
               <p className="text-2xl text-white mr-30">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi
+                {eventDescription}
               </p>
             </div>
         </div>
@@ -30,3 +31,5 @@ const Activities = () => {
   };
   
   export default Activities;
+
+  // add eventName & eventDescription
