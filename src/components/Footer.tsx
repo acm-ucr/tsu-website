@@ -18,7 +18,7 @@ const Footer = () => {
           Thai Student Union
         </div>
 
-        <div className="font-tsu-sahitya text-sm text-tsu-gray-100 flex">
+        <div className="font-tsu-sahitya text-tsu-gray-100 flex text-sm">
           © ACM at UCR 2025. Made with 🧡 from ACM Spark.
         </div>
       </div>
