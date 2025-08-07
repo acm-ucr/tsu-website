@@ -13,8 +13,14 @@ const Footer = () => {
         className="mt-5 flex w-25 sm:mt-0 sm:w-[12%]"
       />
 
-      <div className="font-tsu-sahitya flex text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
-        Thai Student Union
+      <div className="flex flex-col items-center gap-2">
+        <div className="font-tsu-sahitya flex text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
+          Thai Student Union
+        </div>
+
+        <div className="font-tsu-sahitya text-1xl text-tsu-gray-100 flex">
+          © ACM at UCR 2025. Made with 🧡 from ACM Spark.
+        </div>
       </div>
 
       <div className="invisible border-1 border-black sm:visible sm:h-20 md:ml-2 lg:ml-10"></div>
