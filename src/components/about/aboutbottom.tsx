@@ -18,7 +18,7 @@ const AboutBottom = () => {
         <Image
           src={elephant}
           alt="Elephant w/Text Bubble Image"
-          className="-mb-30 ml-85 flex w-[70%]"
+          className="-mb-33 ml-85 flex w-[70%]"
         />
       </div>
     </>
