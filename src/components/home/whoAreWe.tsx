@@ -11,9 +11,10 @@ const WhoAreWe = () => {
         className="ml-17 w-1/3 p-13"
       />
 
-      <div className="font-tsu-sahitya mt-8 ml-25 flex w-5/10 flex-col text-white">
-        <div className="mt-30 mb-4 text-center text-5xl text-white">
-          <span className="text-tsu-pink-100 mr-2">|</span>Who Are We?
+      <div className="font-tsu-sahitya mt-35 ml-25 flex w-5/10 flex-col text-white">
+        <div className="mb-4 flex items-baseline gap-3">
+          <div className="h-10 border-l-8 border-tsu-pink-100" />
+          <p className="text-5xl text-white">Who Are We?</p>
         </div>
         <p className="text-2xl text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
