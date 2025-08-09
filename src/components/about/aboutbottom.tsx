@@ -16,7 +16,6 @@ const AboutBottom = () => {
           quidem reprehenderit!
         </p>
       </div>
-
       <Image
         src={elephant}
         alt="Elephant w/ Text Bubble Image"
