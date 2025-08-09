@@ -16,7 +16,18 @@ const NavBar = () => {
     <div className="bg-tsu-beige-300 relative w-full shadow-lg">
       <div className="relative flex items-center justify-between px-8 py-3">
         <Link href="/" onClick={closeMenu}>
-          <Image src={logo} alt="TSU Text Logo" width={200} height={70} />
+          <Image
+            src={logo}
+            alt="TSU Text Logo"
+            width={200}
+            height={70}
+            className="hidden md:block"
+          />
+          <Image
+            src={logo}
+            alt="TSU Text Logo"
+            className="ml-[-15] block w-[30vw] md:hidden"
+          />
         </Link>
 
         <div className="font-tsu-sahitya hidden w-2/3 justify-end gap-8 px-8 text-4xl md:flex">
