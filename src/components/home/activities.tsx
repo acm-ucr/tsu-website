@@ -17,7 +17,7 @@ const Activities = ({
 }: ActivitiesProps) => {
   return (
     <div className={`flex h-auto w-screen ${backgroundColor}`}>
-      <Image src={image} alt={activityName} className="w-1/3 p-13 ml-17" />
+      <Image src={image} alt={activityName} className="ml-17 w-1/3 p-13" />
 
       <div className="font-tsu-sahitya mt-30 ml-25">
         <div className="mb-4 flex items-baseline gap-3">

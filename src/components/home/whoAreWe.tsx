@@ -13,7 +13,7 @@ const WhoAreWe = () => {
 
       <div className="font-tsu-sahitya mt-35 ml-25 flex w-5/10 flex-col text-white">
         <div className="mb-4 flex items-baseline gap-3">
-          <div className="h-10 border-l-8 border-tsu-pink-100" />
+          <div className="border-tsu-pink-100 h-10 border-l-8" />
           <p className="text-5xl text-white">Who Are We?</p>
         </div>
         <p className="text-2xl text-white">
