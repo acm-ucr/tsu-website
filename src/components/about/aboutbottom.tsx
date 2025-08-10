@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import elephant from "@/public/elephant.webp";
+import { motion } from "motion/react";
 
 const AboutBottom = () => {
   return (
