@@ -8,14 +8,17 @@ const WhoAreWe = () => {
       <Image
         src={placeholder}
         alt="Placeholder Image"
-        className="ml-[23px] w-1/3 p-6 lg:ml-17 lg:p-13"
+        className="ml-5 w-1/3 p-3 md:ml-9 md:p-5 lg:ml-17 lg:w-1/3 lg:p-13"
       />
 
-      <div className="font-tsu-sahitya mt-[8px] ml-[7px] flex w-2/3 flex-col text-white lg:mt-8 lg:ml-25 lg:w-5/10">
-        <div className="mt-10.5 mb-[1px] text-center text-[16px] text-white lg:mt-30 lg:mb-4 lg:text-5xl">
-          <span className="text-tsu-pink-100 mr-0.5 lg:mr-2">|</span>Who Are We?
+      <div className="font-tsu-sahitya mt-4 ml-2 flex w-2/3 flex-col text-white md:mt-4 md:ml-9 lg:mt-8 lg:ml-25 lg:w-5/10">
+        <div className="mb-1 flex items-baseline gap-1.5 lg:mb-4 lg:gap-3">
+          <div className="border-tsu-pink-100 h-6 border-l-4 md:border-l-8 lg:h-10" />
+          <p className="text-lg text-white md:text-3xl lg:text-5xl">
+            Who Are We?
+          </p>
         </div>
-        <p className="text-[7px] text-white lg:text-2xl">
+        <p className="text-xs text-white md:text-lg lg:text-2xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem
