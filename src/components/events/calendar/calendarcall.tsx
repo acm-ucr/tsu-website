@@ -1,36 +1,29 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { Calendar } from "@/components/ui/calendar";
-import CalendarHeader from "@/components/events/calendar/calendarheader";
-
-interface GoogleEventProps {
-  start: {
-    dateTime: Date;
-  };
-  end: {
-    dateTime: Date;
-  };
-  location: string;
-  description: string;
-  summary: string;
-}
+import { Calendar, GoogleEventProps } from "@/components/ui/calendar";
 
 const CalendarCall = () => {
   const [date, setDate] = useState<Date | undefined>(new Date());
 
-  const { data, error } = useQuery({
+  const { data } = useQuery({
     queryKey: ["calendarEvents"],
     queryFn: async () => {
+      const timeMin = new Date(
+        new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000,
+      ).toISOString();
+
+      const timeMax = new Date(
+        new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000,
+      ).toISOString();
+
       const response =
         await fetch(`https://www.googleapis.com/calendar/v3/calendars/${
           process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
         }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
-           &singleEvents=true&orderBy=startTime&timeMin=${new Date(
-             new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000,
-           ).toISOString()}&timeMax=${new Date(
-             new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000,
-           ).toISOString()}`).then((res) => res.json());
+           &singleEvents=true&orderBy=startTime&timeMin=${timeMin}&timeMax=${timeMax}`).then(
+          (res) => res.json(),
+        );
 
       const events = response.items.map(
         ({ start, end, location, description, summary }: GoogleEventProps) => ({
@@ -41,7 +34,6 @@ const CalendarCall = () => {
           title: summary,
         }),
       );
-      console.log(events);
 
       return events;
     },
@@ -49,14 +41,14 @@ const CalendarCall = () => {
 
   return (
     <div className="flex flex-col">
-      {/* <CalendarHeader /> */}
       <Calendar
-        className="w-full"
+        mode="single"
+        className="w-[90vw]"
         selected={date}
-        onSelect={setDate}
+        onSelect={(day) => setDate(day)}
         showOutsideDays={true}
-        // captionLayout="dropdown"
-        buttonVariant="ghost"
+        events={data ?? []}
+        required={true}
       />
     </div>
   );
