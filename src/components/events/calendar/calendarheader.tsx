@@ -18,10 +18,10 @@ const CalendarHeader = ({ date }: CalendarHeaderProps) => {
 
   return (
     <div className="font-tsu-sahitya text-tsu-brown-300 relative flex justify-between">
-      <p className="font-tsu-labelle drop-shadow-tsu-black mb-4 w-1/3 translate-y-[20%] -rotate-5 text-center text-9xl">
+      <p className="font-tsu-labelle drop-shadow-tsu-black mb-4 w-1/3 translate-y-[60%] -rotate-5 text-center text-6xl md:translate-y-[50%] md:text-9xl">
         {months[date.getMonth()]}
       </p>
-      <p className="mr-10 flex translate-y-[35%] items-end text-7xl font-bold">
+      <p className="mr-10 flex translate-y-[70%] items-end text-4xl font-bold md:translate-y-[60%] md:text-7xl">
         {date.getFullYear()}
       </p>
     </div>

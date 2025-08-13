@@ -58,10 +58,10 @@ const Day = ({ events, day, modifiers, ...tdprops }: DayProps) => {
   return (
     <td
       {...tdprops}
-      className={`border-tsu-brown-300 flex h-[15vh] flex-col items-end gap-5 border ${today ? "bg-tsu-beige-100" : ""}`}
+      className={`border-tsu-brown-300 flex h-[17vh] flex-col items-end justify-end gap-5 border md:justify-start ${today ? "bg-tsu-beige-100" : ""}`}
     >
       <div
-        className={`pr-4 text-5xl ${outside ? "text-muted-foreground" : "textblack"} ${selected ? "text-tsu-orange-100" : ""}`}
+        className={`hidden pr-2 text-xl md:block md:pr-4 md:text-5xl ${outside ? "text-gray-400" : "text-black"} ${selected ? "text-tsu-orange-100" : ""}`}
       >
         {date.getDate()}
       </div>
@@ -76,7 +76,7 @@ const Day = ({ events, day, modifiers, ...tdprops }: DayProps) => {
           return (
             <div
               key={index}
-              className="text-md bg-tsu-brown-100 w-full text-center"
+              className="bg-tsu-brown-100 w-full text-center text-xs md:text-lg"
             >
               {title} at{" "}
               {start
@@ -89,6 +89,11 @@ const Day = ({ events, day, modifiers, ...tdprops }: DayProps) => {
           );
         }
       })}
+      <div
+        className={`pr-2 text-xl md:hidden md:pr-4 md:text-5xl ${outside ? "text-gray-400" : "text-black"} ${selected ? "text-tsu-orange-100" : ""}`}
+      >
+        {date.getDate()}
+      </div>
     </td>
   );
 };
@@ -121,7 +126,7 @@ function Calendar({
           root: "font-tsu-sahitya",
           months: "w-full flex flex-col relative items-center justify-center",
           month: "gap-2 w-full flex flex-col border-b border-tsu-brown-300",
-          nav: "space-x-6",
+          nav: "space-x-5 md:space-x-12",
           button_previous:
             "text-tsu-brown-300 hover:text-black hover:bg-tsu-orange-100 rounded-lg px-3 py-1 transition-colors hover:cursor-pointer",
           button_next:
@@ -133,7 +138,7 @@ function Calendar({
           caption_label: "hidden",
           table: "",
           weekdays:
-            "w-full uppercase text-3xl bg-tsu-orange-100 text-center items-center justify-center grid grid-cols-7 border-t border-x border-tsu-brown-300",
+            "w-full uppercase text-md md:text-3xl bg-tsu-orange-100 text-center items-center justify-center grid grid-cols-7 border-t border-x border-tsu-brown-300",
           weekday:
             "w-full py-1 border border-tsu-brown-300 flex items-center justify-center font-normal",
           week: "grid grid-cols-7 border-x border-tsu-brown-300",
@@ -150,12 +155,12 @@ function Calendar({
           ...classNames,
         }}
         components={{
-          Chevron: ({ orientation, ...props }) => {
+          Chevron: ({ orientation }) => {
             if (orientation === "left") {
-              return <ChevronLeftIcon className="size-7" {...props} />;
+              return <ChevronLeftIcon className="size-8 md:size-15" />;
             }
 
-            return <ChevronRightIcon className="size-7" {...props} />;
+            return <ChevronRightIcon className="size-8 md:size-15" />;
           },
 
           Day: (props) => <Day {...props} events={events} />,
