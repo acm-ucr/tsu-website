@@ -6,33 +6,36 @@ import { FaLine } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-tsu-beige-200 flex flex-row items-center justify-center gap-10 px-10 py-6">
+    <div className="bg-tsu-beige-200 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-5 sm:px-10 sm:py-6">
       <Image
         src={TSULogo}
         alt="TSU Logo"
-        className="flex w-[10%] flex-shrink-0"
+        className="mt-5 flex w-25 sm:mt-0 sm:w-[12%]"
       />
 
-      <div className="font-tsu-sahitya flex flex-col items-center pt-5">
-        <p className="text-5xl">Thai Student Union</p>
-        <p className="text-sm text-gray-600">
-          © ACM at UCR 2025. Made with 🧡 from ACM & TSU
-        </p>
+      <div className="flex flex-col items-center gap-2">
+        <div className="font-tsu-sahitya flex text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
+          Thai Student Union
+        </div>
+
+        <div className="font-tsu-sahitya text-tsu-gray-100 flex text-sm">
+          © ACM at UCR 2025. Made with 🧡 from ACM Spark.
+        </div>
       </div>
 
-      <div className="ml-15 h-20 border-1 border-black"></div>
+      <div className="invisible border-1 border-black sm:visible sm:h-20 md:ml-2 lg:ml-10"></div>
 
-      <div className="font-tsu-sahitya ml-10 flex items-center gap-10 text-xl font-medium">
+      <div className="font-tsu-sahitya mb-5 flex items-center gap-5 text-xl font-medium sm:mb-0 xl:ml-10 xl:gap-10 xl:text-3xl 2xl:text-4xl">
         <div className="flex items-center gap-2">
           <Link href="https://www.instagram.com/tsuucr/?hl=en" target="_blank">
-            <AiFillInstagram className="text-tsu-orange-100 h-11 w-11" />
+            <AiFillInstagram className="text-tsu-orange-100 h-8 w-8 sm:h-11 sm:w-11 xl:h-15 xl:w-15" />
           </Link>
           <span>Instagram</span>
         </div>
 
         <div className="flex items-center gap-2">
           <Link href="https://line.me/ti/g/3K_UGDcRGR" target="_blank">
-            <FaLine className="text-tsu-orange-100 h-11 w-11" />
+            <FaLine className="text-tsu-orange-100 h-8 w-8 sm:h-11 sm:w-11 xl:h-15 xl:w-15" />
           </Link>
           <span>Line</span>
         </div>
