@@ -24,7 +24,7 @@ const Footer = () => {
           Made with 🧡 from ACM & TSU
         </div>
       </div>
-  
+
       <div className="invisible border-1 border-black sm:visible sm:h-20 md:ml-2 lg:ml-10"></div>
 
       <div className="font-tsu-sahitya mb-5 flex items-center gap-5 text-xl font-medium sm:mb-0 xl:ml-10 xl:gap-10 xl:text-3xl 2xl:text-4xl">
