@@ -29,7 +29,7 @@ const Footer = () => {
 
       <div className="font-tsu-sahitya mb-5 flex items-center gap-5 text-xl font-medium sm:mb-0 xl:ml-10 xl:gap-10 xl:text-3xl 2xl:text-4xl">
         <div className="flex items-center gap-2">
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }}>
             <Link
               href="https://www.instagram.com/tsuucr/?hl=en"
               target="_blank"
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center gap-2">
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }}>
             <Link href="https://line.me/ti/g/3K_UGDcRGR" target="_blank">
               <FaLine className="text-tsu-orange-100 h-8 w-8 sm:h-11 sm:w-11 xl:h-15 xl:w-15" />
             </Link>
