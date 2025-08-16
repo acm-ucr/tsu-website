@@ -24,7 +24,7 @@ const Footer = () => {
           Made with 🧡 from ACM & TSU
         </div>
       </div>
-
+  
       <div className="invisible border-1 border-black sm:visible sm:h-20 md:ml-2 lg:ml-10"></div>
 
       <div className="font-tsu-sahitya mb-5 flex items-center gap-5 text-xl font-medium sm:mb-0 xl:ml-10 xl:gap-10 xl:text-3xl 2xl:text-4xl">
@@ -37,7 +37,7 @@ const Footer = () => {
               <AiFillInstagram className="text-tsu-orange-100 h-8 w-8 sm:h-11 sm:w-11 xl:h-15 xl:w-15" />
             </Link>
           </motion.div>
-          <span>Instagram</span>
+          <p>Instagram</p>
         </div>
 
         <div className="flex items-center gap-2">
@@ -46,7 +46,7 @@ const Footer = () => {
               <FaLine className="text-tsu-orange-100 h-8 w-8 sm:h-11 sm:w-11 xl:h-15 xl:w-15" />
             </Link>
           </motion.div>
-          <span>Line</span>
+          <p>Line</p>
         </div>
       </div>
     </div>
