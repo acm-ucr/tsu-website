@@ -1,9 +1,9 @@
-interface navigation {
+export interface navigation {
   name: string;
   link: string;
 }
 
-export const navigations: navigation[] = [
+const navigations: navigation[] = [
   {
     name: "home",
     link: "/",
@@ -21,3 +21,5 @@ export const navigations: navigation[] = [
     link: "/events",
   },
 ];
+
+export default navigations;
