@@ -3,9 +3,11 @@ import WhyJoinUs from "@/components/home/whyJoinUs";
 
 export default function Home() {
   return (
-    <div className="bg-rose-50">
-      <ThaiStudentUnion />
-      <WhyJoinUs />
-    </div>
+    <>
+      <div className="bg-tsu-beige-300">
+        <ThaiStudentUnion />
+        <WhyJoinUs />
+      </div>
+    </>
   );
 }
