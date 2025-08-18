@@ -4,21 +4,19 @@ import placeholder from "@/public/placeholder.webp";
 
 const WhoAreWe = () => {
   return (
-    <div className="bg-tsu-blue-100 flex h-auto w-screen flex-col md:flex-row">
+    <div className="bg-tsu-blue-100 flex w-screen flex-col items-center text-center md:flex-row md:text-left">
       <Image
         src={placeholder}
         alt="Placeholder Image"
-        className="ml-0 w-full p-10 md:ml-9 md:w-1/3 md:p-5 lg:ml-17 lg:w-1/3 lg:p-7"
+        className="h-auto w-4/5 pt-15 md:ml-9 md:w-xs md:p-5 lg:ml-17 lg:w-1/3 lg:p-7"
       />
-
-      <div className="font-tsu-sahitya mb-10 ml-10 flex w-4/5 flex-col text-white md:mt-4 md:mb-5 md:ml-9 md:w-2/3 lg:mt-8 lg:ml-25 lg:w-5/10">
-        <div className="mx-auto mb-1 flex items-baseline gap-1 lg:mb-4 lg:gap-3">
-          <div className="border-tsu-pink-100 mx-auto h-4 border-l-4 md:h-6 md:border-l-8 lg:h-10" />
-          <p className="text-lg text-white md:text-3xl lg:text-5xl">
-            Who Are We?
-          </p>
+      <div className="h-15 lg:block" />
+      <div className="font-tsu-sahitya mr-10 mb-10 ml-10 flex w-2/3 flex-col text-white md:mt-4 md:mb-5 xl:mr-20">
+        <div className="flex justify-center gap-1 md:mt-8 md:justify-start md:gap-3 lg:mb-4 xl:mt-15 2xl:mt-15">
+          <div className="border-tsu-pink-100 h-8 border-l-6 md:h-10 lg:border-l-8" />
+          <p className="text-4xl text-white lg:text-5xl">Who Are We?</p>
         </div>
-        <p className="text-xs text-white md:text-lg lg:text-2xl">
+        <p className="mt-5 mb-10 text-lg text-white md:mb-5 lg:mb-10 lg:text-2xl xl:mb-13">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem
