@@ -1,9 +1,17 @@
-const Home = () => {
+import AboutHeader from "../../components/about/header";
+import Polaroid from "../../components/about/polaroid";
+import { TopAboutText } from "@/components/about/toptext";
+import AboutBottom from "../../components/about/aboutbottom";
+
+const About = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      About
+    <div className="bg-tsu-beige-300">
+      <AboutHeader />
+      <TopAboutText />
+      <Polaroid />
+      <AboutBottom />
     </div>
   );
 };
 
-export default Home;
+export default About;
