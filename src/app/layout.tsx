@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,10 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-tsu-beige-300`}>
         <NavBar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <Footer />
       </body>
     </html>
   );
