@@ -27,7 +27,7 @@ const ThaiStudentUnion = () => {
       <Image
         src={PalmTree}
         alt="Palm Tree"
-        className="absolute right-0 bottom-0 z-0 w-[50vh] translate-x-20 opacity-70 lg:translate-y-20 xl:w-[40vh] xl:opacity-100 2xl:w-[70vh] 2xl:translate-y-40"
+        className="absolute right-0 bottom-0 z-0 w-[50vh] translate-x-20 opacity-70 lg:opacity-100 2xl:w-[70vh] 2xl:translate-y-40"
       />
     </div>
   );
