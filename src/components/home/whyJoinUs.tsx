@@ -15,11 +15,11 @@ const WhyJoinUs = () => {
         <Image src={mango2} alt="Mango 2" className="h-auto w-36" />
       </div>
       <div className="text-center">
-        <div className="mb-15 flex items-center justify-center gap-3 md:mb-10 lg:justify-start">
+        <div className="mb-15 flex items-center justify-center gap-3 md:mb-10 md:justify-start">
           <div className="border-tsu-orange-100 h-10 border-l-8" />
           <p className="text-4xl md:text-5xl">Why Join Us?</p>
         </div>
-        <p className="text-lg lg:text-left lg:text-2xl">
+        <p className="text-lg md:text-left lg:text-2xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
