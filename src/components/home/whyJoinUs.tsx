@@ -6,20 +6,20 @@ import mango3 from "@/public/mango3.webp";
 
 const WhyJoinUs = () => {
   return (
-    <div className="font-tsu-sahitya relative mx-auto mt-15 w-[85vw] py-20 2xl:my-30 2xl:mb-40">
-      <div className="absolute top-0 right-[-5] mt-5 hidden translate-x-1/2 2xl:block">
+    <div className="font-tsu-sahitya relative mx-auto mt-15 w-[85vw] py-5 2xl:my-30 2xl:mb-45">
+      <div className="absolute top-0 right-[-5] hidden translate-x-1/2 2xl:block">
         <Image src={mango} alt="Mango" className="h-auto w-40" />
       </div>
 
-      <div className="absolute top-70 left-[-15] hidden -translate-x-1/2 2xl:block">
+      <div className="absolute top-53 left-[-15] hidden -translate-x-1/2 2xl:block">
         <Image src={mango2} alt="Mango 2" className="h-auto w-36" />
       </div>
       <div className="text-center">
-        <div className="mb-15 flex items-center justify-center gap-3 md:mb-10 lg:justify-start">
+        <div className="mb-15 flex items-center justify-center gap-3 md:mb-10 md:justify-start">
           <div className="border-tsu-orange-100 h-10 border-l-8" />
           <p className="text-4xl md:text-5xl">Why Join Us?</p>
         </div>
-        <p className="text-lg lg:text-left lg:text-2xl">
+        <p className="text-lg md:text-left lg:text-2xl 2xl:mr-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
