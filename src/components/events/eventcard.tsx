@@ -25,7 +25,7 @@ const EventCard = ({
             <div>{time}</div>
             <div>{location}</div>
           </div>
-          <div className="mr-5 mt-5 text-left text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+          <div className="mt-5 mr-5 text-left text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             {description}
           </div>
         </div>
