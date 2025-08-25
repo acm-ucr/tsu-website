@@ -8,13 +8,13 @@ import { motion } from "motion/react";
 const MangoAnimation = {
   initial: { opacity: 0 },
   whileInView: { opacity: 1, x: 0 },
-  transition: { duration: 0.5, delay: 0.3 },
+  transition: { duration: 0.7, delay: 0.3 },
 };
 
 const TextAnimation = {
-  initial: { opacity: 0, x: -100 },
+  initial: { opacity: 0, x: -150 },
   whileInView: { opacity: 1, x: 0 },
-  transition: { duration: 0.5 },
+  transition: { duration: 0.7 },
 };
 
 const WhyJoinUs = () => {
@@ -22,7 +22,6 @@ const WhyJoinUs = () => {
     <div className="font-tsu-sahitya relative mx-auto mt-15 w-[85vw] py-5 2xl:my-30 2xl:mb-45">
       <motion.div
         {...MangoAnimation}
-        initial={{ x: 100 }}
         className="absolute top-0 right-[-5] hidden translate-x-1/2 2xl:block"
       >
         <Image src={mango} alt="Mango" className="h-auto w-40" />
@@ -30,7 +29,6 @@ const WhyJoinUs = () => {
 
       <motion.div
         {...MangoAnimation}
-        initial={{ x: -100 }}
         className="absolute top-53 left-[-15] hidden -translate-x-1/2 2xl:block"
       >
         <Image src={mango2} alt="Mango 2" className="h-auto w-36" />
@@ -45,7 +43,6 @@ const WhyJoinUs = () => {
         </motion.div>
         <motion.div
           {...TextAnimation}
-          transition={{ delay: 0.3 }}
           className="text-lg md:text-left lg:text-2xl 2xl:mr-5"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
