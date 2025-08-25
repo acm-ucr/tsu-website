@@ -16,10 +16,10 @@ const EventCard = ({
   return (
     <div className="w-10/12 lg:w-4/5">
       <div className="font-tsu-sahitya flex flex-col justify-start border-x-2 border-t-2 border-b-2">
-        <div className="bg-tsu-beige-300 p-2 text-lg font-bold sm:text-xl md:text-2xl lg:text-3xl xl:p-4 xl:text-4xl">
+        <div className="bg-tsu-beige-300 p-2 md:p-5 xl:p-4 text-lg font-bold sm:text-xl md:text-2xl lg:text-3xl xl:p-4 xl:text-4xl">
           {title}
         </div>
-        <div className="border-t-2 bg-white p-2 md:p-5 xl:p-10">
+        <div className="border-t-2 bg-white p-2 md:p-5 xl:p-8">
           <div className="flex flex-row gap-x-5 font-bold sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
             <div>{date}</div>
             <div>{time}</div>
