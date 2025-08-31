@@ -3,23 +3,48 @@ import Image from "next/image";
 import mango from "@/public/mango.webp";
 import mango2 from "@/public/mango2.webp";
 import mango3 from "@/public/mango3.webp";
+import { motion } from "motion/react";
+
+const MangoAnimation = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1, x: 0 },
+  transition: { duration: 0.7, delay: 0.3 },
+};
+
+const TextAnimation = {
+  initial: { opacity: 0, x: -150 },
+  whileInView: { opacity: 1, x: 0 },
+  transition: { duration: 0.7 },
+};
 
 const WhyJoinUs = () => {
   return (
     <div className="font-tsu-sahitya relative mx-auto mt-15 w-[85vw] py-5 2xl:my-30 2xl:mb-45">
-      <div className="absolute top-0 right-[-5] hidden translate-x-1/2 2xl:block">
+      <motion.div
+        {...MangoAnimation}
+        className="absolute top-0 right-[-5] hidden translate-x-1/2 2xl:block"
+      >
         <Image src={mango} alt="Mango" className="h-auto w-40" />
-      </div>
+      </motion.div>
 
-      <div className="absolute top-53 left-[-15] hidden -translate-x-1/2 2xl:block">
+      <motion.div
+        {...MangoAnimation}
+        className="absolute top-53 left-[-15] hidden -translate-x-1/2 2xl:block"
+      >
         <Image src={mango2} alt="Mango 2" className="h-auto w-36" />
-      </div>
+      </motion.div>
       <div className="text-center">
-        <div className="mb-15 flex items-center justify-center gap-3 md:mb-10 md:justify-start">
+        <motion.div
+          {...TextAnimation}
+          className="mb-15 flex items-center justify-center gap-3 md:mb-10 md:justify-start"
+        >
           <div className="border-tsu-orange-100 h-10 border-l-8" />
           <p className="text-4xl md:text-5xl">Why Join Us?</p>
-        </div>
-        <p className="text-lg md:text-left lg:text-2xl 2xl:mr-5">
+        </motion.div>
+        <motion.div
+          {...TextAnimation}
+          className="text-lg md:text-left lg:text-2xl 2xl:mr-5"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -27,14 +52,18 @@ const WhyJoinUs = () => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        </motion.div>
       </div>
 
-      <div className="mt-15 mb-7 flex justify-center gap-3 2xl:hidden">
+      <motion.div
+        {...MangoAnimation}
+        initial={{ x: -500 }}
+        className="mt-15 mb-7 flex justify-center gap-3 2xl:hidden"
+      >
         <Image src={mango3} alt="Mango 3" className="h-auto w-20" />
         <Image src={mango3} alt="Mango 3" className="h-auto w-20" />
         <Image src={mango3} alt="Mango 3" className="h-auto w-20" />
-      </div>
+      </motion.div>
     </div>
   );
 };

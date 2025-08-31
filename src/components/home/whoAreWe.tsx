@@ -9,7 +9,7 @@ const WhoAreWe = () => {
       <motion.div
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
         className="h-auto w-4/5 pt-15 md:ml-9 md:w-xs md:p-5 lg:ml-17 lg:w-1/3 lg:p-7"
       >
         <Image src={placeholder} alt="Placeholder Image" />
@@ -19,7 +19,7 @@ const WhoAreWe = () => {
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.7, delay: 0.3 }}
         className="font-tsu-sahitya mr-10 mb-10 ml-10 flex w-2/3 flex-col text-white md:mt-4 md:mb-5 xl:mr-20"
       >
         <div className="flex justify-center gap-1 md:mt-8 md:justify-start md:gap-3 lg:mb-4 xl:mt-15 2xl:mt-15">
