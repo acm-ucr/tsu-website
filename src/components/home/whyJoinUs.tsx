@@ -26,7 +26,6 @@ const WhyJoinUs = () => {
       >
         <Image src={mango} alt="Mango" className="h-auto w-40" />
       </motion.div>
-
       <motion.div
         {...MangoAnimation}
         className="absolute top-53 left-[-15] hidden -translate-x-1/2 2xl:block"
@@ -54,7 +53,6 @@ const WhyJoinUs = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </motion.div>
       </div>
-
       <motion.div
         {...MangoAnimation}
         className="mt-15 mb-7 flex justify-center gap-3 2xl:hidden"
@@ -62,7 +60,8 @@ const WhyJoinUs = () => {
         <Image src={mango3} alt="Mango 3" className="h-auto w-20" />
         <Image src={mango3} alt="Mango 3" className="h-auto w-20" />
         <Image src={mango3} alt="Mango 3" className="h-auto w-20" />
-      </motion.div>    </div>
+      </motion.div>{" "}
+    </div>
   );
 };
 
