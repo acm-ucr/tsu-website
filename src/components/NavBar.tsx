@@ -16,7 +16,7 @@ const NavBar = () => {
   const path = usePathname();
 
   return (
-    <div className="bg-tsu-beige-300 relative w-full shadow-lg">
+    <div className="bg-tsu-beige-300 relative shadow-lg">
       <div className="relative flex items-center justify-between px-8 py-3">
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <Link href="/" onClick={closeMenu}>
