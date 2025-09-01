@@ -7,7 +7,7 @@ const WhoAreWe = () => {
   return (
     <div className="bg-tsu-blue-100 flex w-screen flex-col items-center text-center md:flex-row md:text-left">
       <motion.div
-        initial={{ opacity: 0, x: -200 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         className="h-auto w-4/5 pt-15 md:ml-9 md:w-xs md:p-5 lg:ml-17 lg:w-1/3 lg:p-7"
