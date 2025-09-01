@@ -22,7 +22,7 @@ const ThaiStudentUnion = () => {
         </p>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, x: -200 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         className="relative z-10 ml-10 py-20 md:ml-15"
