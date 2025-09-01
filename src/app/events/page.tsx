@@ -1,9 +1,10 @@
-import CalendarCall from "@/components/events/calendar/calendarcall";
+import CalendarCall from "@/components/events/calendarcall";
+import EventHeader from "@/components/events/header";
 
 const Events = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-5 p-5">
-      Events
+      <EventHeader />
       <CalendarCall />
     </div>
   );

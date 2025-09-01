@@ -3,7 +3,7 @@
 import * as React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { DayPicker, CalendarDay, Modifiers } from "react-day-picker";
-import CalendarHeader from "@/components/events/calendar/calendarheader";
+import CalendarHeader from "@/components/events/calendarheader";
 import { cn } from "@/lib/utils";
 
 export interface GoogleEventProps {
@@ -58,7 +58,7 @@ const Day = ({ events, day, modifiers, ...tdprops }: DayProps) => {
   return (
     <td
       {...tdprops}
-      className={`border-tsu-brown-300 flex h-[17vh] flex-col items-end justify-end gap-5 border md:justify-start ${today ? "bg-tsu-beige-100" : ""}`}
+      className={`border-tsu-brown-300 hide-scrollbar overflow-y-auto flex h-[17vh] flex-col items-end justify-end gap-5 border md:justify-start ${today ? "bg-tsu-beige-100" : ""}`}
     >
       <div
         className={`hidden pr-2 text-xl md:block md:pr-4 md:text-5xl ${outside ? "text-gray-400" : "text-black"} ${selected ? "text-tsu-orange-100" : ""}`}
