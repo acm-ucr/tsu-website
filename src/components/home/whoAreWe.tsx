@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const WhoAreWe = () => {
   return (
-    <div className="bg-tsu-blue-100 flex w-screen flex-col items-center text-center md:flex-row md:text-left">
+    <div className="bg-tsu-blue-100 flex w-full flex-col items-center text-center md:flex-row md:text-left">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}

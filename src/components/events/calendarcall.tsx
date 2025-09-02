@@ -67,6 +67,7 @@ const CalendarCall = () => {
             events={data?.events ?? []}
             required={true}
           />
+          <Header header="Upcoming Events" />
           <div className="flex w-full flex-col items-center gap-10">
             {data?.upcomingEvents.length ? (
               data.upcomingEvents.map(

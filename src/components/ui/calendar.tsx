@@ -58,7 +58,7 @@ const Day = ({ events, day, modifiers, ...tdprops }: DayProps) => {
   return (
     <td
       {...tdprops}
-      className={`border-tsu-brown-300 hide-scrollbar overflow-y-auto flex h-[17vh] flex-col items-end justify-end gap-5 border md:justify-start ${today ? "bg-tsu-beige-100" : ""}`}
+      className={`border-tsu-brown-300 hide-scrollbar flex h-[17vh] flex-col items-end justify-end gap-5 overflow-y-auto border md:justify-start ${today ? "bg-tsu-beige-100" : ""}`}
     >
       <div
         className={`hidden pr-2 text-xl md:block md:pr-4 md:text-5xl ${outside ? "text-gray-400" : "text-black"} ${selected ? "text-tsu-orange-100" : ""}`}
