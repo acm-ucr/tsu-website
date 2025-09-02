@@ -1,4 +1,4 @@
-import AboutHeader from "../../components/about/header";
+import Header from "@/components/header";
 import Polaroid from "../../components/about/polaroid";
 import { TopAboutText } from "@/components/about/toptext";
 import AboutBottom from "../../components/about/aboutbottom";
@@ -6,7 +6,7 @@ import AboutBottom from "../../components/about/aboutbottom";
 const About = () => {
   return (
     <div className="bg-tsu-beige-300">
-      <AboutHeader />
+      <Header header="About Us" />
       <TopAboutText />
       <Polaroid />
       <AboutBottom />

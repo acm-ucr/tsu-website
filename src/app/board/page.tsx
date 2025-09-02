@@ -1,10 +1,10 @@
-import BoardHeader from "@/components/board/header";
+import Header from "@/components/header";
 import CardMapping from "@/components/board/CardMapping";
 
 const Board = () => {
   return (
     <div className="bg-tsu-beige-300">
-      <BoardHeader />
+      <Header header="Meet The Board" />
       <CardMapping />
     </div>
   );
