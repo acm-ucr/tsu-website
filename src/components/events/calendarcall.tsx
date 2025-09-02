@@ -1,12 +1,18 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { Calendar, GoogleEventProps } from "@/components/ui/calendar";
+import {
+  Calendar,
+  GoogleEventProps,
+  CalendarEventProps,
+} from "@/components/ui/calendar";
+import EventCard from "@/components/events/eventcard";
+import Header from "@/components/header";
 
 const CalendarCall = () => {
   const [date, setDate] = useState<Date | undefined>(new Date());
 
-  const { data } = useQuery({
+  const { data, isLoading } = useQuery({
     queryKey: ["calendarEvents"],
     queryFn: async () => {
       const timeMin = new Date(
@@ -25,7 +31,7 @@ const CalendarCall = () => {
           (res) => res.json(),
         );
 
-      const events = response.items.map(
+      const events: CalendarEventProps[] = response.items.map(
         ({ start, end, location, description, summary }: GoogleEventProps) => ({
           start: start.dateTime,
           end: end.dateTime,
@@ -35,21 +41,60 @@ const CalendarCall = () => {
         }),
       );
 
-      return events;
+      const upcomingEvents = events.filter(
+        (event) => new Date(event.start) >= new Date(),
+      );
+
+      return {
+        events,
+        upcomingEvents,
+      };
     },
   });
 
   return (
-    <div className="flex flex-col">
-      <Calendar
-        mode="single"
-        className="w-[90vw]"
-        selected={date}
-        onSelect={(day) => setDate(day)}
-        showOutsideDays={true}
-        events={data ?? []}
-        required={true}
-      />
+    <div className="flex flex-col items-center gap-8">
+      {isLoading ? (
+        <Header header="Loading Events..." />
+      ) : (
+        <>
+          <Calendar
+            mode="single"
+            className="w-[90vw]"
+            selected={date}
+            onSelect={(day) => setDate(day)}
+            showOutsideDays={true}
+            events={data?.events ?? []}
+            required={true}
+          />
+          <div className="flex w-full flex-col items-center gap-10">
+            {data?.upcomingEvents.length ? (
+              data.upcomingEvents.map(
+                ({ start, location, description, title }, index: number) => (
+                  <EventCard
+                    key={index}
+                    title={title}
+                    date={new Date(start).toLocaleDateString("en-US", {
+                      weekday: "long",
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                    time={new Date(start as string).toLocaleTimeString(
+                      "en-US",
+                      { hour: "2-digit", minute: "2-digit" },
+                    )}
+                    location={location}
+                    description={description}
+                  />
+                ),
+              )
+            ) : (
+              <Header header="No Upcoming Events" />
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from "react";
+import { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { DayPicker, CalendarDay, Modifiers } from "react-day-picker";
 import CalendarHeader from "@/components/events/calendarheader";
@@ -107,7 +107,7 @@ function Calendar({
   events,
   ...props
 }: CalendarProps) {
-  const [currentDate, setCurrentDate] = React.useState(new Date());
+  const [currentDate, setCurrentDate] = useState(new Date());
 
   return (
     <div className="flex flex-col gap-2">
