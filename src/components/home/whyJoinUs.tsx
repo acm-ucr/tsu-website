@@ -44,13 +44,10 @@ const WhyJoinUs = () => {
           {...TextAnimation}
           className="text-lg md:text-left lg:text-2xl 2xl:mr-5"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Meet new friends, enjoy authentic Thai food, participate in cultural
+          events, and celebrate traditional festivals. Whether you are Thai or
+          simply interested in learning more, our club is a space to grow,
+          share, and connect.
         </motion.div>
       </div>
       <motion.div

@@ -18,7 +18,7 @@ const Activities = ({
 }: ActivitiesProps) => {
   return (
     <div
-      className={`flex w-full flex-col items-center text-center md:flex-row md:text-left ${backgroundColor}`}
+      className={`mt-5 flex w-full flex-col items-center text-center md:flex-row md:text-left ${backgroundColor}`}
     >
       <motion.div
         initial={{ opacity: 0, x: -100 }}
