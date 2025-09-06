@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 const ThaiStudentUnion = () => {
   return (
-    <div className="font-tsu-sahitya relative w-full h-auto overflow-hidden">
+    <div className="font-tsu-sahitya relative h-auto w-full overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
