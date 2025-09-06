@@ -6,7 +6,19 @@ import { motion } from "motion/react";
 
 const ThaiStudentUnion = () => {
   return (
-    <div className="font-tsu-sahitya relative w-full overflow-hidden">
+    <div className="font-tsu-sahitya relative w-full h-auto overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="relative z-10 flex flex-col items-center pt-23 text-center md:hidden"
+      >
+        <p className="mb-5 text-6xl">Thai Student Union</p>
+        <div className="bg-tsu-pink-100 mb-5 h-1.5 w-1/4"></div>
+        <p className="w-3/4 text-lg">
+          Join TSU to connect, learn, and make lasting memories!
+        </p>
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
