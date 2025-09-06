@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 
 const WhoAreWe = () => {
   return (
-    <div className="bg-tsu-blue-100 flex w-screen flex-col items-center text-center md:flex-row md:text-left">
+    <div className="bg-tsu-blue-100 flex w-full flex-col items-center text-center md:flex-row md:text-left">
       <motion.div
-        initial={{ opacity: 0, x: -200 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         className="h-auto w-4/5 pt-15 md:ml-9 md:w-xs md:p-5 lg:ml-17 lg:w-1/3 lg:p-7"
@@ -27,12 +27,12 @@ const WhoAreWe = () => {
           <p className="text-4xl text-white lg:text-5xl">Who Are We?</p>
         </div>
         <p className="mt-5 mb-10 text-lg text-white md:mb-5 lg:mb-10 lg:text-2xl xl:mb-13">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi
+          We are a diverse group of students passionate about promoting Thai
+          culture at UCR. Our members come from different backgrounds, but we
+          all share a love for community, cultural exchange, and celebrating the
+          unique traditions of Thailand. Through events, workshops, and social
+          gatherings, we aim to create an inclusive space where everyone can
+          experience and appreciate Thai culture.
         </p>
       </motion.div>
     </div>

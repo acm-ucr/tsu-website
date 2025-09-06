@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 
 const Footer = () => {
   return (
-    <div className="bg-tsu-beige-200 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-5 sm:px-10 sm:py-6">
+    <div className="bg-tsu-beige-200 flex w-full flex-col items-center justify-center gap-2 sm:flex-row sm:gap-5 sm:px-10 sm:py-6">
       <Image
         src={TSULogo}
         alt="TSU Logo"
@@ -17,11 +17,6 @@ const Footer = () => {
       <div className="font-tsu-sahitya flex flex-col items-center">
         <div className="text-3xl sm:text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl">
           Thai Student Union
-        </div>
-        <div className="text-center text-xs md:text-sm">
-          © ACM at UCR 2025.{" "}
-          <br className="sm:inline sm:text-center md:hidden" />
-          Made with 🧡 from ACM & TSU
         </div>
       </div>
 
