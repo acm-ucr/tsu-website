@@ -58,19 +58,11 @@ const CalendarCall = () => {
         <Header header="Loading Events..." />
       ) : (
         <>
-          <Calendar
-            mode="single"
-            className="w-[90vw]"
-            selected={date}
-            onSelect={(day) => setDate(day)}
-            showOutsideDays={true}
-            events={data?.events ?? []}
-            required={true}
-          />
-          <Header header="Upcoming Events" />
           <div className="flex w-full flex-col items-center gap-10">
             {data?.upcomingEvents.length ? (
-              data.upcomingEvents.map(
+              <>
+              <Header header="Upcoming Events" />
+              {data.upcomingEvents.map(
                 ({ start, location, description, title }, index: number) => (
                   <EventCard
                     key={index}
@@ -89,11 +81,21 @@ const CalendarCall = () => {
                     description={description}
                   />
                 ),
-              )
+              )}
+              </>
             ) : (
               <Header header="No Upcoming Events" />
             )}
           </div>
+          <Calendar
+            mode="single"
+            className="w-[90vw]"
+            selected={date}
+            onSelect={(day) => setDate(day)}
+            showOutsideDays={true}
+            events={data?.events ?? []}
+            required={true}
+          />
         </>
       )}
     </div>
