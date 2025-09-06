@@ -61,27 +61,27 @@ const CalendarCall = () => {
           <div className="flex w-full flex-col items-center gap-10">
             {data?.upcomingEvents.length ? (
               <>
-              <Header header="Upcoming Events" />
-              {data.upcomingEvents.map(
-                ({ start, location, description, title }, index: number) => (
-                  <EventCard
-                    key={index}
-                    title={title}
-                    date={new Date(start).toLocaleDateString("en-US", {
-                      weekday: "long",
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                    time={new Date(start as string).toLocaleTimeString(
-                      "en-US",
-                      { hour: "2-digit", minute: "2-digit" },
-                    )}
-                    location={location}
-                    description={description}
-                  />
-                ),
-              )}
+                <Header header="Upcoming Events" />
+                {data.upcomingEvents.map(
+                  ({ start, location, description, title }, index: number) => (
+                    <EventCard
+                      key={index}
+                      title={title}
+                      date={new Date(start).toLocaleDateString("en-US", {
+                        weekday: "long",
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                      time={new Date(start as string).toLocaleTimeString(
+                        "en-US",
+                        { hour: "2-digit", minute: "2-digit" },
+                      )}
+                      location={location}
+                      description={description}
+                    />
+                  ),
+                )}
               </>
             ) : (
               <Header header="No Upcoming Events" />
